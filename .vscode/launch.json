@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: run.py with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run.py",
+            "console": "integratedTerminal",
+            // "pythonPath": "path/to/your/venv/bin/python",
+            "args": [
+                "--input_data_path",
+                "./local/sample_data.csv",
+                "--output_data_path",
+                "./local/",
+                "--model_path",
+                "./local/models/model_20240307_054739.joblib",
+                "--pipeline_path",
+                "./local/models/data_prep_pipeline_20240307_054705.joblib",
+                "--run_env",
+                "local"
+            ]
+        }
+    ]
+}
